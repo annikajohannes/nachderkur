@@ -24,12 +24,6 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   font-variant: small-caps;
 }
 
- .main-content{
-    margin-top: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-}
-
 .section-global-wrapper {
   position: relative;
 }
@@ -135,10 +129,6 @@ float: right;
 .img-pad{
     padding-right: 23px;
 }
-.main-content{
-    margin-top: 80px;
-}
-
 
 
 .white-text{
@@ -150,7 +140,12 @@ body {
     font-size: 16px;
     line-height: 24px;
     background:#F8FAFF;
-   
+}
+
+.main-content {
+    font-size: 16px;
+    line-height: 24px;
+    background:#F8FAFF;
 }
 
 a {
