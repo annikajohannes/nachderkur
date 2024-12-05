@@ -19,18 +19,14 @@ a:hover {
     text-decoration: none;
 }
 
-li {
-}
-
-ul {
-}
-
 strong {
     font-weight: bold;
 }
 
 summary {
-    margin-bottom: 20px;
+    cursor: pointer;
+    display: list-item;
+    margin-bottom: 8px;
 }
 
 .center {
@@ -86,7 +82,7 @@ summary {
     }
     .side-left-high {
       height: 2800px;
-    } 
+    }
 }
 
 /* === Footer === */
