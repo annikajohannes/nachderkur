@@ -11,6 +11,9 @@ a:hover {
     color: #888;
 }
 
+.container {
+    max-width: 1200px;
+}
 
 summary {
     margin-bottom: 8px;
