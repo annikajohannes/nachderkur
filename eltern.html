@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -69,7 +70,7 @@
                 <em>Du warst auf einer Mutter-/Vater-Kind-Kur? Du möchtest deine neu gewonnene Energie und deine neuen Erkenntnisse nachhaltig in deinen Alltag integrieren? Oder suchst du einen Leitfaden und Support für deine Zeit nach der Kur? Dann bist du hier richtig. Die Kur ist nur der Anfang - lass uns den Weg gemeinsam weitergehen!</em>
             </blockquote>
 
-            <h3 class="lead" id="coaching">Systemisches Coaching - <em>intensiv</em> - über 4 Monate </h3>
+            <h3 id="coaching">Systemisches Coaching - <em>intensiv</em> - über 4 Monate </h3>
 
             <p>Mein <b>4-monatiges Intensiv-Coaching</b> richtet sich an Mütter und Väter, die nach der Kur nicht alleine dastehen wollen. Oft ist es eine Herausforderung, die Erholung und die Ziele der Kur in den Alltag zu integrieren und langfristig zu erhalten. Mein Coaching ist darauf ausgerichtet, Mütter und Väter genau in dieser Phase zu begleiten und zu unterstützen.</p>
             <br>
@@ -91,9 +92,43 @@
             <br>
             <br>
             <p><em>Interesse geweckt? Hast du Fragen?</em></p>
-            <p>Buche dir einen Termin für ein unverbindliches Kennernlerngespräch!</p>  <a href="http://www.google.de">Zur Terminbuchung </a>
+            <p>Buche dir einen Termin für ein unverbindliches Kennenlerngespräch!</p>
+
+            <div id="not-yet-booked2">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <div id="calendar2" class="col-cal"></div>
+                    </div>
+                    <div class="col-6">
+                        <p><input class="w-100" id="name-input2" type="text" placeholder="Name"></p>
+                        <p><input class="w-100" id="mail-input2" type="text" placeholder="Email-Adresse"></p>
+                        <p><input class="w-100" id="phone-input2" type="text" placeholder="Telefonnummer (optional)"></p>
+                        <div id="slot-container2"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div hidden id="slot-booked2">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        Buchung erfolgreich:<br><br>
+                        <b id="booked-date2"></b>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <b>Vielen Dank!</b> Es hat geklappt. Du hast einen Termin gebucht.
+                            Ich werde mich bald mit allen Details bei dir melden. Ich freue mich dich kennenzulernen!<br>
+                            Bei Fragen melde Dich gerne direkt bei mir unter <a href="mailto:kontakt@nachderkur.de">kontakt@nachderkur.de</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <br><br>
-            <h3 class="lead" id="workshop">Workshop & Coaching - <em>Alltagstauglich nach der Kur</em></h3>
+            <h3 id="workshop">Workshop & Coaching - <em>Alltagstauglich nach der Kur</em></h3>
             <p>
             </p>
             <p>Dieses Programm richtet sich an Mütter und Väter, die ihre Erholung und ihre Ziele aus der Kur in den Alltag übertragen möchten. <b>Alltagstauglich nach der Kur</b> kombiniert Einzel-Coachings und praktische Workshops, die speziell auf die Herausforderungen des Familienalltags abgestimmt sind. Gemeinsam arbeiten wir daran, Lösungen zu entwickeln, die langfristig wirken und in den Alltag integriert werden können.</p>
@@ -123,8 +158,43 @@
                 <br>
                 <br>
             <p><em>Interesse geweckt? Hast du Fragen?</em></p>
-            <p>Dann buche dir einen Termin für ein unverbindliches Kennernlerngespräch!</p>  <a href="http://www.google.de">Zur Terminbuchung </a>
-            <h3 class="lead" id="umfrage">Umfrage</h3>
+            <p>Dann buche dir einen Termin für ein unverbindliches Kennernlerngespräch!</p>
+
+            <div id="not-yet-booked">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <div id="calendar" class="col-cal"></div>
+                    </div>
+                    <div class="col-6">
+                        <p><input class="w-100" id="name-input" type="text" placeholder="Name"></p>
+                        <p><input class="w-100" id="mail-input" type="text" placeholder="Email-Adresse"></p>
+                        <p><input class="w-100" id="phone-input" type="text" placeholder="Telefonnummer (optional)"></p>
+                        <div id="slot-container"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div hidden id="slot-booked">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        Buchung erfolgreich:<br><br>
+                        <b id="booked-date"></b>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <b>Vielen Dank!</b> Es hat geklappt. Du hast einen Termin gebucht.
+                            Ich werde mich bald mit allen Details bei dir melden. Ich freue mich dich kennenzulernen!<br>
+                            Bei Fragen melde Dich gerne direkt bei mir unter <a href="mailto:kontakt@nachderkur.de">kontakt@nachderkur.de</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p></p>
+            <h3 id="umfrage">Umfrage</h3>
             <blockquote>
                 <em>Hast du schon von meiner Umfrage gehört?</em>
             </blockquote>
@@ -186,5 +256,8 @@
 
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/datepicker-full.min.js"></script>
+<script type="text/javascript" src="js/jquery-ajax.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
