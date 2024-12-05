@@ -1,11 +1,4 @@
-/* Tag Styles */
-body {
-    font-size: 16px;
-    line-height: 24px;
-    background: #F8FAFF;
-}
-
-a {
+a, a:visited {
     color: #55CBD2;
     text-decoration: none;
     -o-transition: all .3s;
@@ -16,36 +9,11 @@ a {
 
 a:hover {
     color: #888;
-    text-decoration: none;
 }
 
-strong {
-    font-weight: bold;
-}
 
 summary {
-    cursor: pointer;
-    display: list-item;
     margin-bottom: 8px;
-}
-
-.center {
-    text-align: center;
-}
-
-.btn-info {
-    float: right;
-}
-
-.current span {
-    color: #55CBD2;
-}
-
-
-/* === Top Navigation === */
-.active {
-    background: #74B9B9 !important;
-    color: white;
 }
 
 .navbar {
@@ -56,12 +24,12 @@ summary {
 }
 
 .navbar-nav > li > a {
+    color: #528C7C;
     padding: 10px 15px;
     margin: 5px 5px;
     border-radius: 4px;
 }
 
-/* === Header Image === */
 .header-image {
     margin-bottom: 30px;
     width: 100%;
@@ -86,13 +54,13 @@ summary {
 }
 
 /* === Footer === */
-footer {
+#mainfooter {
     margin-top: 40px;
     padding: 20px;
     background: black;
 }
 
-footer h3 {
+#mainfooter h3 {
     color: #dadada;
     margin-bottom: 20px;
 }
@@ -114,8 +82,15 @@ footer h3 {
     color: #ffffff;
 }
 
-.copyright {
+#copyright {
+    text-align: center;
     color: #fff;
     padding: 20px 0 10px 0;
     background-color: rgb(23, 23, 23);
+}
+
+/* Discourse+Bootstrap fix*/
+.modal {
+    z-index: 2000;
+    display: flex
 }
