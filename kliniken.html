@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -53,15 +54,15 @@
         <p></p>
         <b>Plattform für Kurkliniken</b>
         <p></p>
-        In diesem moderierten Forum können sich Kurkliniken fachlich rund um ihren Klinikalltag austauschen sowie Erfahrungen und Tipps teilen. 
+        In diesem moderierten Forum können sich Kurkliniken fachlich rund um ihren Klinikalltag austauschen sowie Erfahrungen und Tipps teilen.
         <p></p>
         Anmeldung unter diesem Link:
         <p></p>
         <a href="https://steadyhq.com/nachderkur">Jetzt <em>kostenfrei</em> anmelden!</a>
         <p></p>
-        
-        
-        
+
+
+
         </div>
 
         <div class="col-sm-8 col-md-8">
@@ -87,12 +88,50 @@
             <p>Sie haben andere Wünsche oder spezielle Themen? Ich bin offen für individuelle Absprachen!</p>
             <p></p>
 
-        <p class="d-flex justify-content-center" ><img src="assets/img/slider/Annika2.jpg" alt=""></p>
-        
-        <blockquote>
-            <em>Lassen Sie uns gemeinsam Ihre Klinik zu einem Ort der Stärkung und Erholung für Eltern und Familien machen, damit sie ihre Kurzeit als wertvolle Auszeit erleben können.</em>
-        </blockquote>
-   
+            <p class="d-flex justify-content-center" ><img src="assets/img/slider/Annika2.jpg" alt=""></p>
+
+            <p>
+                Interesse? Buchen Sie jetzt einen unverbindlichen Kennenlerntermin.
+            </p>
+
+            <div id="not-yet-booked">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <div id="calendar" class="col-cal"></div>
+                    </div>
+                    <div class="col-6">
+                        <p><input class="w-100" id="name-input" type="text" placeholder="Name"></p>
+                        <p><input class="w-100" id="mail-input" type="text" placeholder="Email-Adresse"></p>
+                        <p><input class="w-100" id="phone-input" type="text" placeholder="Telefonnummer (optional)"></p>
+                        <div id="slot-container"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div hidden id="slot-booked">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        Buchung erfolgreich:<br><br>
+                        <b id="booked-date"></b>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <b>Vielen Dank!</b> Sie haben einen Termin gebucht.
+                            Ich werde mich bald mit allen Details bei Ihnen melden. Ich freue mich Sie kennenzulernen!<br>
+                            Bei Fragen melden Sie sich gerne direkt bei mir unter <a href="mailto:kontakt@nachderkur.de">kontakt@nachderkur.de</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p></p>
+            <blockquote>
+                <em>Lassen Sie uns gemeinsam Ihre Klinik zu einem Ort der Stärkung und Erholung für Eltern und Familien machen, damit sie ihre Kurzeit als wertvolle Auszeit erleben können.</em>
+            </blockquote>
+        </div>
     </div>
 </div>
 
@@ -137,5 +176,8 @@
 
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/datepicker-full.min.js"></script>
+<script type="text/javascript" src="js/jquery-ajax.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

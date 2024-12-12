@@ -106,7 +106,7 @@ function bookSlot(date) {
     };
     xhr.send(JSON.stringify({
         date: date.getTime(),
-        name: nameInput.value + " (Interesse Workshop nachderkur.de)",
+        name: nameInput.value + " " + (window.location.pathname.includes("kliniken") ? "(Kurklinik)" : " (Workshop)"),
         mail: mailInput.value,
         phone: phoneInput.value
     }));
@@ -163,7 +163,7 @@ function bookSlot2(date) {
     };
     xhr.send(JSON.stringify({
         date: date.getTime(),
-        name: nameInput2.value + " (Interesse Coaching nachderkur.de)",
+        name: nameInput2.value + " | " + window.location.pathname + " (Coaching)",
         mail: mailInput2.value,
         phone: phoneInput2.value
     }));
